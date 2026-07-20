@@ -61,4 +61,5 @@ test("logout User @regression", async ({ page }) => {
   await page.locator('[href="/logout"]').click();
   // Verify user is navigated to login page after logout
   await expect(page.locator("[class='login-form'] h2")).toHaveText("Login to your account");
+  console.log("---------------- Logout successfull -----------------------------------");
 });
