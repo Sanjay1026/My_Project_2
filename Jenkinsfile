@@ -3,6 +3,14 @@ pipeline {
     agent any
 
     stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello Jenkins'
+            }
+        }
+    }
+
+    stages {
 
         stage('Clone Repository') {
             steps {
