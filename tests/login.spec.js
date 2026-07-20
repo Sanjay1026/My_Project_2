@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import path from "path";
 import Homepage from "../Pages/HomePage";
 
-test.only("Login with userName and Password @Smoke", async ({ page }) => {
+test("Login with userName and Password @Smoke", async ({ page }) => {
   await page.goto("https://automationexercise.com/");
   await expect(page.locator("[class='fa fa-home']")).toBeVisible();
   await page.locator('//a[@href="/login"]').click();
