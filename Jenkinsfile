@@ -25,6 +25,7 @@ pipeline {
 
         stage('Run Playwright Test') {
             steps {
+                
                 bat "npm run ${params.script})"
             }   
         }
