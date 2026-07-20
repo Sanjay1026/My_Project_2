@@ -50,7 +50,7 @@ test("logout User @regression", async ({ page }) => {
   await expect(page.locator("[class='login-form'] h2")).toHaveText("Login to your account");
 
   // login
-  await page.locator("[data-qa='login-email']").fill("test22323@gmail.com");
+  await page.locator("[data-qa='login-email']").fill("test227654@gmail.com");
   await page.locator("[data-qa='login-password']").fill("test123");
   await page.getByRole("button", { name: "Login" }).click();
 
