@@ -41,7 +41,7 @@ test("Login with incorrect usetName and password", async ({ page }) => {
   //   await expect(page.getByText("Your email or password is incorrect!")).toBeVisible();
 });
 
-test("logout User", async ({ page }) => {
+test("logout User @regression", async ({ page }) => {
   await page.goto("https://automationexercise.com/");
   // verify Homepage
   await expect(page.locator("[class='fa fa-home']")).toBeVisible();
