@@ -6,8 +6,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: 'main',
-                    // url: 'https://github.com/Sanjay1026/Playwright-E2E-Framework.git'
+                git branch: 'master',
+                    url: 'https://github.com/Sanjay1026/My_Project_2.git'
             }
         }
 
