@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Chutki",
+    "email": "",
+    "password": "Chutki@123",
+    "day": "10",
+    "month": "May",
+    "year": "1998",
+    "firstName": "Chukti",
+    "lastName": "C",
+    "company": "Test Yantra",
+    "address1": "123 MG Road",
+    "address2": "Near Metro Station",
+    "country": "India",
+    "state": "Karnataka",
+    "city": "Bangalore",
+    "zipcode": "560001",
+    "mobileNumber": "9876543210"
+  }
+]
