@@ -1,13 +1,12 @@
-
 pipeline {
     agent any
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello Jenkins'
-            }
-        }
+    parameters {
+        choice(
+            name: 'script',
+            choices: ['smoke', 'regression'],
+            description: 'Select the test suite to run'
+        )
     }
 
     stages {
@@ -31,11 +30,10 @@ pipeline {
             }
         }
 
-        stage('Run Playwright Test') {
+        stage('Run Tests') {
             steps {
-                
                 bat "npm run ${params.script}"
-            }   
+            }
         }
     }
 }
