@@ -34,7 +34,7 @@ test("Register User", async ({ page }) => {
   await page.locator("[class='btn btn-primary']").click();
   await expect(page.locator("li a b")).toHaveText("Test");
 
-  // delete account
+  delete account;
   await page.locator('[href="/delete_account"]').click();
   //   verify account deleted
   await expect(page.locator('[class="title text-center"]')).toHaveText("Account Deleted!");
